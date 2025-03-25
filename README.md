@@ -14,3 +14,9 @@ Data was sourced from the following APIs:
 **Date Range**: November 11, 2024 – March 24, 2025 (aligned with the problem statement and Historical daily forex data ).
 
 ---
+## Task 1 : Feature Engineering:
+    Key Features Likely to Influence Exchange Rates
+ lagged_close (momentum)
+ real_interest_rate (interest-inflation balance)
+ 7d_ma (trend direction)
+ daily_range (volatility)
