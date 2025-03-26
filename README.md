@@ -69,78 +69,43 @@ The models were tested for their ability to predict short-term exchange rate mov
 
 Root Mean Squared Error (RMSE)
 Mean Absolute Error (MAE)
+### **1. Root Mean Squared Error (RMSE)**
+
+The **Root Mean Squared Error (RMSE)** is a commonly used metric to evaluate the performance of regression models. It measures the square root of the average squared differences between the predicted and actual values. It penalizes larger errors more than smaller ones.
+
+The formula for **RMSE** is:
+
+$$
+RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
+$$
+
+Where:
+- \( y_i \) = Actual value (true value)
+- \( \hat{y}_i \) = Predicted value
+- \( n \) = Number of data points
+
+### **2. Mean Absolute Error (MAE)**
+
+The **Mean Absolute Error (MAE)** measures the average of the absolute differences between the predicted and actual values. Unlike RMSE, MAE treats all errors equally and is not sensitive to large errors.
+
+The formula for **MAE** is:
+
+$$
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
+$$
+
+Where:
+- \( y_i \) = Actual value (true value)
+- \( \hat{y}_i \) = Predicted value
+- \( n \) = Number of data points
 
 Evaluation Metrics
-1. Root Mean Squared Error (RMSE)
-RMSE measures the square root of the average squared differences between predicted and actual values. It is sensitive to large errors and penalizes models with large deviations.
+| Model          | RMSE                         | MAE                        |
+|----------------|------------------------------|----------------------------|
+| Linear Regression | 0.1169                        | 0.0781                     |
+| XGBoost        | 0.1017                        | 0.0745                     |
+| Random Forest  | 0.0944                        | 0.0646                     |
 
-The formula for RMSE is:
-
-𝑅
-𝑀
-𝑆
-𝐸
-=
-1
-𝑛
-∑
-𝑖
-=
-1
-𝑛
-(
-𝑦
-𝑖
-−
-𝑦
-^
-𝑖
-)
-2
-RMSE= 
-n
-1
-​
-  
-i=1
-∑
-n
-​
- (y 
-i
-​
- − 
-y
-^
-​
-  
-i
-​
- ) 
-2
- 
-​
- 
-Where:
-
-𝑦
-𝑖
-y 
-i
-​
-  = Actual value (true value)
-𝑦
-^
-𝑖
-y
-^
-​
-  
-i
-​
-  = Predicted value
-𝑛
-n = Number of data points
 
 ## Hyperparameter Tuning for Random Forest
 Hyperparameter tuning was performed on the Random Forest model using GridSearchCV to find the best parameters. The key hyperparameters tuned were:
