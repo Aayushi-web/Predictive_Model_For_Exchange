@@ -63,9 +63,14 @@ R² (Coefficient of Determination): Indicates how well the model explains the va
 
 After training and evaluating the models on the test dataset, we obtained the following results:
 
-**Model**	         **MSE** **R²**                 
-Linear Regression	0.0137	0.7737
-Random Forest	    0.0089	0.8523
-XGBoost	            0.0103	0.8287
+# Model Evaluation Results
+
+The following table shows the evaluation results of the different machine learning models used for predicting exchange rate movements:
+
+| Model              | MSE                        | R²                          |
+|--------------------|----------------------------|-----------------------------|
+| **Linear Regression** | 0.0137                    | 0.7737                      |
+| **Random Forest**    | 0.0089                    | 0.8523                      |
+| **XGBoost**          | 0.0103                    | 0.8287                      |
 
 
