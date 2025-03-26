@@ -119,3 +119,14 @@ n_estimators: 200
 max_depth: 10
 min_samples_split: 5
 
+## Conclusion
+
+Based on the **RMSE** and **MAE** values:
+- **Random Forest** is the best-performing model, showing the lowest error values, indicating better prediction performance.
+- **XGBoost** follows closely and performs better than **Linear Regression**, which is typically the most basic model.
+  
+For further improvements, we could:
+- Experiment with **hyperparameter tuning**.
+- Try **model ensembling** (e.g., combining Random Forest and XGBoost).
+- Explore **feature engineering** (e.g., adding additional economic indicators or technical features).
+
