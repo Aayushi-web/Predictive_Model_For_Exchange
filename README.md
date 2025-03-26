@@ -106,8 +106,8 @@ Evaluation Metrics
 | XGBoost        | 0.1017                        | 0.0745                     |
 | Random Forest  | 0.0944                        | 0.0646                     |
 
-
-## Hyperparameter Tuning for Random Forest
+---
+## Task 4 Hyperparameter Tuning for Random Forest
 Hyperparameter tuning was performed on the Random Forest model using GridSearchCV to find the best parameters. The key hyperparameters tuned were:
 
 n_estimators (number of trees)
@@ -118,8 +118,8 @@ After hyperparameter tuning, the Random Forest model achieved improved performan
 n_estimators: 200
 max_depth: 10
 min_samples_split: 5
-
-## Conclusion
+---
+## Task 5  Conclusion
 
 Based on the **RMSE** and **MAE** values:
 - **Random Forest** is the best-performing model, showing the lowest error values, indicating better prediction performance.
