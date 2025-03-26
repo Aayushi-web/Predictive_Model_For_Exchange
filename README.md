@@ -74,3 +74,15 @@ The following table shows the evaluation results of the different machine learni
 | **XGBoost**          | 0.0103                    | 0.8287                      |
 
 
+## Hyperparameter Tuning for Random Forest
+Hyperparameter tuning was performed on the Random Forest model using GridSearchCV to find the best parameters. The key hyperparameters tuned were:
+
+n_estimators (number of trees)
+max_depth (maximum depth of trees)
+min_samples_split (minimum number of samples required to split a node)
+After hyperparameter tuning, the Random Forest model achieved improved performance, with the following best parameters:
+
+n_estimators: 200
+max_depth: 10
+min_samples_split: 5
+
