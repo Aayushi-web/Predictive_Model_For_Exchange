@@ -37,8 +37,35 @@ Description: A normalized version of the daily range, scaled to a certain range 
 Why it's useful: Provides a relative measure of volatility, making it easier to compare across different time periods or currencies.
 
 
+---
+## Task 2 : Model Building:
+The goal of Task 2 is to build predictive models for short-term exchange rate movements using machine learning algorithms. The models aim to predict the next day's closing price (or short-term price movement) based on historical financial and economic data.
 
+In this task, we implemented the following models:
 
+Linear Regression
+Random Forest
+XGBoost
 
+1. Linear Regression:
+Linear Regression was implemented as a baseline model. This simple approach predicts the target based on a linear combination of input features.
+2. Random Forest:
+Random Forest, an ensemble learning technique, was used to capture complex relationships and interactions between features. It works well with non-linear data and is less prone to overfitting compared to individual decision trees.
+3. XGBoost:
+XGBoost, a gradient boosting model, was used due to its powerful performance on structured/tabular data. It uses boosting techniques to build strong predictive models by combining weak models sequentially.
+
+## Task 3 : Model Evaluation:
+
+The models were evaluated using the following metrics:
+
+Mean Squared Error (MSE): Measures the average squared difference between predicted and actual values. A lower MSE indicates better performance.
+R² (Coefficient of Determination): Indicates how well the model explains the variability in the target variable. A higher R² indicates a better fit.
+
+After training and evaluating the models on the test dataset, we obtained the following results:
+
+**Model**	         **MSE** **R²**                 
+Linear Regression	0.0137	0.7737
+Random Forest	    0.0089	0.8523
+XGBoost	            0.0103	0.8287
 
 
