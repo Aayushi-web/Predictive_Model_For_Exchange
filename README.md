@@ -63,11 +63,19 @@ R² (Coefficient of Determination): Indicates how well the model explains the va
 
 After training and evaluating the models on the test dataset, we obtained the following results:
 
-# Model Evaluation Results
+## Model Evaluation Results
+
+The models were tested for their ability to predict short-term exchange rate movements, and their performance is evaluated using the following metrics:
 
 Root Mean Squared Error (RMSE)
-RMSE is a widely-used metric to evaluate the accuracy of a regression model. It measures the square root of the average squared differences between the predicted and actual values.
-Formula:
+Mean Absolute Error (MAE)
+
+Evaluation Metrics
+1. Root Mean Squared Error (RMSE)
+RMSE measures the square root of the average squared differences between predicted and actual values. It is sensitive to large errors and penalizes models with large deviations.
+
+The formula for RMSE is:
+
 𝑅
 𝑀
 𝑆
@@ -113,63 +121,26 @@ i
  
 ​
  
-Mean Absolute Error (MAE)
-MAE calculates the average of the absolute differences between predicted and actual values.
-Formula:
-𝑀
-𝐴
-𝐸
-=
-1
-𝑛
-∑
-𝑖
-=
-1
-𝑛
-∣
+Where:
+
 𝑦
 𝑖
-−
+y 
+i
+​
+  = Actual value (true value)
 𝑦
 ^
 𝑖
-∣
-MAE= 
-n
-1
-​
-  
-i=1
-∑
-n
-​
- ∣y 
-i
-​
- − 
 y
 ^
 ​
   
 i
 ​
- ∣
-Model Performance
-Below are the evaluation metrics for the three models tested:
-
-Model	RMSE	MAE
-Linear Regression	0.1169	0.0781
-XGBoost	0.1017	0.0745
-Random Forest	0.0944	0.0646
-Summary
-XGBoost performed better than Linear Regression in terms of both RMSE and MAE, showing lower error values.
-Random Forest provided the best performance, achieving the lowest RMSE and MAE values, suggesting it is the most accurate model for predicting short-term exchange rate movements.
-Conclusion
-Based on the performance metrics:
-
-Random Forest outperforms the other models in predicting exchange rates.
-XGBoost is a strong contender with a slightly better performance than Linear Regression.
+  = Predicted value
+𝑛
+n = Number of data points
 
 ## Hyperparameter Tuning for Random Forest
 Hyperparameter tuning was performed on the Random Forest model using GridSearchCV to find the best parameters. The key hyperparameters tuned were:
