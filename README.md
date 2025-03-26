@@ -8,8 +8,8 @@ The goal is to provide a reproducible pipeline for predicting exchange rate fluc
 
 ## Dataset
 Data was sourced from the following APIs:
-- **Economic Indicators** (GDP, CPI(inflation rate), Interest Rates): Fetched from the [FRED API(Api key : )](https://fred.stlouisfed.org/) using series IDs `GDPC1`, `CPIAUCSL`, and `FEDFUNDS`.
-- **Exchange Rates**: Historical daily forex data (e.g., EUR/USD) retrieved from [Alpha Vantage Api key : ](https://www.alphavantage.co/) .
+- **Economic Indicators** (GDP, CPI(inflation rate), Interest Rates): Fetched from the [FRED API(Api key : BX4KZJF2W789Q6LI)](https://fred.stlouisfed.org/) using series IDs `GDPC1`, `CPIAUCSL`, and `FEDFUNDS`.
+- **Exchange Rates**: Historical daily forex data (e.g., EUR/USD) retrieved from [Alpha Vantage Api key :de3f0d3126fb21b30dd8c1981ce5f2cf ](https://www.alphavantage.co/) .
 
 **Date Range**: November 11, 2024 – March 24, 2025 (aligned with the problem statement and Historical daily forex data ).
 
