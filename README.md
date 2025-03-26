@@ -65,14 +65,111 @@ After training and evaluating the models on the test dataset, we obtained the fo
 
 # Model Evaluation Results
 
-The following table shows the evaluation results of the different machine learning models used for predicting exchange rate movements:
+Root Mean Squared Error (RMSE)
+RMSE is a widely-used metric to evaluate the accuracy of a regression model. It measures the square root of the average squared differences between the predicted and actual values.
+Formula:
+𝑅
+𝑀
+𝑆
+𝐸
+=
+1
+𝑛
+∑
+𝑖
+=
+1
+𝑛
+(
+𝑦
+𝑖
+−
+𝑦
+^
+𝑖
+)
+2
+RMSE= 
+n
+1
+​
+  
+i=1
+∑
+n
+​
+ (y 
+i
+​
+ − 
+y
+^
+​
+  
+i
+​
+ ) 
+2
+ 
+​
+ 
+Mean Absolute Error (MAE)
+MAE calculates the average of the absolute differences between predicted and actual values.
+Formula:
+𝑀
+𝐴
+𝐸
+=
+1
+𝑛
+∑
+𝑖
+=
+1
+𝑛
+∣
+𝑦
+𝑖
+−
+𝑦
+^
+𝑖
+∣
+MAE= 
+n
+1
+​
+  
+i=1
+∑
+n
+​
+ ∣y 
+i
+​
+ − 
+y
+^
+​
+  
+i
+​
+ ∣
+Model Performance
+Below are the evaluation metrics for the three models tested:
 
-| Model              | MSE                        | R²                          |
-|--------------------|----------------------------|-----------------------------|
-| **Linear Regression** | 0.0137                    | 0.7737                      |
-| **Random Forest**    | 0.0089                    | 0.8523                      |
-| **XGBoost**          | 0.0103                    | 0.8287                      |
+Model	RMSE	MAE
+Linear Regression	0.1169	0.0781
+XGBoost	0.1017	0.0745
+Random Forest	0.0944	0.0646
+Summary
+XGBoost performed better than Linear Regression in terms of both RMSE and MAE, showing lower error values.
+Random Forest provided the best performance, achieving the lowest RMSE and MAE values, suggesting it is the most accurate model for predicting short-term exchange rate movements.
+Conclusion
+Based on the performance metrics:
 
+Random Forest outperforms the other models in predicting exchange rates.
+XGBoost is a strong contender with a slightly better performance than Linear Regression.
 
 ## Hyperparameter Tuning for Random Forest
 Hyperparameter tuning was performed on the Random Forest model using GridSearchCV to find the best parameters. The key hyperparameters tuned were:
