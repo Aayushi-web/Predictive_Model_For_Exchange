@@ -20,3 +20,25 @@ Data was sourced from the following APIs:
  real_interest_rate (interest-inflation balance)
  7d_ma (trend direction)
  daily_range (volatility)
+ 1. lagged_close (Momentum)
+Description: The closing price of the previous day. It captures the momentum of price movements.
+Why it's useful: Helps identify trends, as the current exchange rate often follows the previous day's movement.
+2. log_return (Interest-inflation Balance)
+Description: The percentage change in the closing price, calculated using the natural log of the price ratio.
+Why it's useful: Reflects price changes in a normalized form, indicating the rate of return on currency.
+3. 7d_ma (Trend Direction)
+Description: The 7-day moving average of the closing price.
+Why it's useful: Smooths out short-term fluctuations and helps identify the underlying trend of the exchange rate.
+4. daily_range (Volatility)
+Description: The difference between the high and low prices of the day.
+Why it's useful: Measures the volatility of the exchange rate, with higher values indicating more price fluctuation.
+5. norm_range (Volatility)
+Description: A normalized version of the daily range, scaled to a certain range (e.g., 0 to 1).
+Why it's useful: Provides a relative measure of volatility, making it easier to compare across different time periods or currencies.
+
+
+
+
+
+
+
